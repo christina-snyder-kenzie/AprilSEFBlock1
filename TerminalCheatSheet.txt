@@ -1,0 +1,69 @@
+pwd = Present Working Directory
+	Shows you where you are
+
+ls = List (could also be dir on windows)
+	Shows you what you have in that folder
+		ls -l
+			shows more info about files
+		ls -a
+			shows even your hidden files
+		ls -la
+			Shows infor about hidden files
+
+cd <folderName> = change directory to <folderName>
+	Moves through your files
+
+cd ..
+	moves UP a file
+
+cd ~ 
+	goes to your home directory
+
+clear 
+	erases your terminal output (makes the terminal blank)
+
+mkdir <folderName> = make directory
+	This creates a new folder with the specified name
+
+-------------
+
+1. GO to the assignment
+2. Grab the SSH link
+3. In terminal/git bash, cd to our kenzie folder
+	(First, cd ~)
+3b. We should now be in our kenzie folder
+4. git clone <link>
+	that downloads code to our computer
+
+
+SideSTEP: into IntelliJ
+	Open the project
+	Make some changes
+	Check the tests (you want the green checks)
+
+5. git status
+	AT this point, it should be RED
+6. git add .
+	No feedback = good feedback
+	Then do another git status
+7. git commit -m "message"
+	this is like a special save
+8. git push
+Finally, watch the magic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
