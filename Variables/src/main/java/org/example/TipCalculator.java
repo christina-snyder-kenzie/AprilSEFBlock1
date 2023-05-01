@@ -20,6 +20,8 @@ public class TipCalculator {
         double taxPercent = 0.075;
         double tipPercent = 0.22;
 
+        double finalTotal2 = ((subTotal*taxPercent) + subTotal) + ((subTotal*taxPercent) + subTotal) * tipPercent;
+
         double taxAmount = subTotal * taxPercent;
         subTotal = subTotal + taxAmount; //variable update/reassignment
         System.out.println("Subtotal with Tax: $" + subTotal);
@@ -30,6 +32,9 @@ public class TipCalculator {
         System.out.println("Tip amount: $" + tipAmount);
         System.out.println("Final total: $" + finalTotal);
 
-        System.out.printf("Final total: $%.2f", finalTotal);
+        System.out.printf("Final total: $%.2f\n", finalTotal);
+
+        System.out.println(finalTotal2);
+        
     }
 }
