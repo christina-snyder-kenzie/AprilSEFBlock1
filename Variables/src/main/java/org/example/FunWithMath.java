@@ -38,6 +38,14 @@ public class FunWithMath {
         System.out.println(27 % 5);
         System.out.println(16 % 4);
 
+        double pi = 3.14159;
+        System.out.printf("PI is: %.4f\n", pi);
+        System.out.println(Math.round(pi));
+        pi = pi * 100;
+        pi = Math.round(pi);
+        pi = pi / 100;
+        System.out.println(pi);
+
     }
 
 
