@@ -35,6 +35,6 @@ public class TipCalculator {
         System.out.printf("Final total: $%.2f\n", finalTotal);
 
         System.out.println(finalTotal2);
-        
+
     }
 }
