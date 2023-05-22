@@ -30,5 +30,8 @@ public class ScannerReview {
 
         double c = Math.sqrt(a*a + Math.pow(b, 2));
         System.out.println("C: " + c);
+
+        //3 squared plus 4 squared equals 5;
+        System.out.println(a + " squared plus " + b + " squared equals " + c);
     }
 }
