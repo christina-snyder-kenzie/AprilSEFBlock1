@@ -79,9 +79,26 @@ public class StringReIntro {
         //we need a counter
 
         //init
+        int counter = 0;
         //loop
-            //if statement (about w's)
+        for (int i = 0; i < str.length(); i++) {
+           /*
+            String letter = str.substring(i, i + 1);
+            //if statement (about w's) (if the letter is a w)
+            if (letter.equals("w")) {
                 //counter++
+                counter++; //counter = counter + 1;
+            }
+            */
+
+
+            char letter = str.charAt(i);
+            if (letter == 'w'){
+                counter++;
+            }
+        }
+        System.out.println("The string has " + counter + " w's");
+
 
 
 
@@ -99,6 +116,21 @@ public class StringReIntro {
 
             //char letter;
                 //if (letter == 'w')
+
+        String withOutWs = str.replace("w", "");
+        int numberOfWs = str.length() - withOutWs.length();
+
+        String[] wackyWords = str.split(" ");
+        for (int i = 0; i < wackyWords.length; i++){
+            String currentWord = wackyWords[i];
+            if (currentWord.equals("wow")){
+                System.out.println(currentWord + " at " + i);
+            }
+        }
+
+
+        System.out.println(MethodIntro.findSign(-102));
+
         
 
     } //ends the main method
