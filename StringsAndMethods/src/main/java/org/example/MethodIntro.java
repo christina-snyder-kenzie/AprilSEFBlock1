@@ -6,40 +6,85 @@ public class MethodIntro {
 
     //METHODS CAN GO HERE
 
+    // 6/12 warmup examples
+    public static boolean isTweetable(String message, int characterLimit) {
+        // if the length of the message is less than the character limit, it is tweetable
+        if (message.length() <= characterLimit) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // create a method which is determine whether or not a particular value (int/String/double/whatever) exists within an array
+    public static boolean doesContain(int[] numbers, int numberToLookFor) {
+        for (int i = 0; i < numbers.length; i++) {
+            int currentNumber = numbers[i];
+            if (currentNumber == numberToLookFor) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
     public static void main(String[] args) {
-        String data = "7,5,1,3";
+//        String data = "7,5,1,3";
+//
+//        String str = "The    water    park was wacky,    wonderful, awesome,    wow";
+//        System.out.println(str);
+//
+//        double result = Math.pow(2, 5);
+//
+//        //static methods
+//            //do not need an object
+//            //are called from the class name
+//
+//        //vs
+//
+//        //instance methods
+//            //need an object
+//            //are called from a variable name
+//
+//        String piece = str.substring(0, 4);
+//        int index = str.indexOf("water");
+//
+//        String sign = findSign(17);
+//        System.out.println(sign);
+//        System.out.println(wordCount(str));
+//
+//        String[] words = collectWords(str);
+//        System.out.println(Arrays.toString(words));
+//
+//        System.out.println(fancySubstring("hello", 2, true));
+//        System.out.println(fancySubstring("hello", 3, false));
+//
+//        System.out.println(countLs("hello, world!"));
+//        System.out.println("l's: " + countANYletter("hello, world!", 'l'));
+//        System.out.println("o's: " + countANYletter("hello, world!", "o"));
 
-        String str = "The    water    park was wacky,    wonderful, awesome,    wow";
-        System.out.println(str);
+        String tweet = "Good morning from Nashville, TN";
+        int characterLimit = 144;
 
-        double result = Math.pow(2, 5);
+        boolean canBeTweeted = isTweetable(tweet, characterLimit);
+        System.out.println("Can be tweeted?: " + canBeTweeted);
 
-        //static methods
-            //do not need an object
-            //are called from the class name
+        characterLimit = 20;
 
-        //vs
+        String aLaterTweet = "Good evening from the capital of Tennessee, Music City USA";
+        canBeTweeted = isTweetable(aLaterTweet, characterLimit);
+        System.out.println("Can be tweeted?: " + canBeTweeted);
 
-        //instance methods
-            //need an object
-            //are called from a variable name
+        int[] scores = {10, 11, 12, 5, 7, 9};
+        int myScore = 7;
+        boolean doesMyScoreExist = doesContain(scores, myScore);
+        System.out.println("Does my score exist?: " + doesMyScoreExist);
 
-        String piece = str.substring(0, 4);
-        int index = str.indexOf("water");
+        int alainsScore = 14;
+        boolean doesAlainsScoreExist = doesContain(scores, alainsScore);
+        System.out.println("Does Alain's score exist?: " + doesAlainsScoreExist);
 
-        String sign = findSign(17);
-        System.out.println(sign);
-        System.out.println(wordCount(str));
-
-        String[] words = collectWords(str);
-        System.out.println(Arrays.toString(words));
-
-        System.out.println(fancySubstring("hello", 2, true));
-        System.out.println(fancySubstring("hello", 3, false));
-
-        System.out.println(countLs("hello, world!"));
-        System.out.println("l's: " + countANYletter("hello, world!", 'l'));
-        System.out.println("o's: " + countANYletter("hello, world!", "o"));
 
     } //ends my main method
 
@@ -189,5 +234,27 @@ public class MethodIntro {
             return answer;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 } //ends my class
