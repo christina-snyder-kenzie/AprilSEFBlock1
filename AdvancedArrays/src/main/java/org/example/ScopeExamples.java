@@ -28,7 +28,7 @@ public class ScopeExamples {
         for (int i = 0; i < list.size(); i++){
             int number = list.get(i);
             number = number * 2;
-            list.set(i, number);
+            list.set(i, number); //arr[i] = number * 2
 
             //list.set(i, list.get(i) * 2);
         }
