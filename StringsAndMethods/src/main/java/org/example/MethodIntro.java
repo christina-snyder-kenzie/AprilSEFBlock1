@@ -86,6 +86,10 @@ public class MethodIntro {
         System.out.println("Does Alain's score exist?: " + doesAlainsScoreExist);
 
 
+        int countforA = countANYletter("words", 'a');
+        int countforE = countANYletter("words", 'e');
+        int countforI = countANYletter("words", 'i');
+
     } //ends my main method
 
     //BRAINSTORM:
