@@ -99,12 +99,12 @@ public class StringsAndMethods {
             sb.append(" and ");
             sb.append(data[1]);
         } else {
-            for (int i = 0; i < data.length; i++){
+            for (int i = 0; i < data.length - 1; i++){
                 sb.append(data[i]);
-                if (i != data.length - 1) {
-                    sb.append(delimeter);
-                }
+                sb.append(delimeter);
             }
+
+            sb.append(data[data.length - 1]);
         }
         return sb.toString();
     }
