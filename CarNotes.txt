@@ -1,0 +1,26 @@
+Car
+	State
+		VIN
+		Price
+		Passengers/Seats
+
+		Make/Model
+		Color
+		Doors
+	Behavior
+		getters
+		setters
+		toString
+		testDrive()
+
+Dealership
+	State
+		all the cars (lot)
+		New/Used
+	Behavior
+		Add a car
+		sell a car
+		remove a car
+		findCarsByCost
+		findCarsByNumPassengers
+

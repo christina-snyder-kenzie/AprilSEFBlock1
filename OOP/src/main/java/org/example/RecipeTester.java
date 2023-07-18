@@ -28,10 +28,27 @@ public class RecipeTester {
 
         Recipe r = new Recipe(myName, mySupplies, mySteps, myIngr, myPrepTime, myCookTime);
         System.out.println(r.getIngr());
+
+
+        r.addSupply("Strainer");
+        Ingredient toAdd = new Ingredient(3, "Shakes", "Onion Powder");
+        r.addIngredient(toAdd);
+        r.addIngredient(5, "Shakes", "Garlic Powder");
+        r.addStep("Optionally wash your rice...", 0);
+
+        r.updateIngr("salt", 4, "TBSP");
+
         System.out.println(r);
 
         Recipe r2 = new Recipe("Cookies");
         //r2.addSupply("Baking Sheet");
+
+        Recipe doubleBatch = r.scaleIt(2);
+        System.out.println(doubleBatch);
+
+        doubleBatch.addSupply("A really big pot");
+        System.out.println(doubleBatch);
+        //System.out.println(r);
 
 
     }
